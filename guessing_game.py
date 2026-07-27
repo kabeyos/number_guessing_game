@@ -9,7 +9,14 @@ def start_game():
     while True:
 
         user_input = input('Please, choose a number: ')
-        user_input = int(user_input)
+        try:
+
+            user_input = int(user_input)
+        except ValueError as e:
+            print(f'Oups!{e} is not a number, try again!')
+            continue
+
+            user_input = int(user_input)
         random_number = random.randint(1,10)
         
         number_of_attempt.append(user_input)
@@ -26,8 +33,7 @@ def start_game():
             print()
             print('*** GAME OVER!! ***')
             break
-        
-    
+          
 start_game()
 #The game ends here!!
 
