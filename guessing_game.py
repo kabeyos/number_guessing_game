@@ -1,3 +1,5 @@
+#This is number guessing game made for fun
+#the game start here
 import random
 
 print('******* Hey there! Welcome to this fun guessing game!***')
@@ -27,6 +29,7 @@ def start_game():
         
     
 start_game()
+#The game ends here!!
 
 
 
