@@ -6,6 +6,7 @@ print('******* Hey there! Welcome to this fun guessing game!***')
 
 def start_game():
     number_of_attempt = []
+    random_number = random.randint(1,10)
     while True:
 
         user_input = input('Please, choose a number: ')
@@ -17,7 +18,7 @@ def start_game():
             continue
 
             user_input = int(user_input)
-        random_number = random.randint(1,10)
+        
         
         number_of_attempt.append(user_input)
         total_number_of_attempts = len(number_of_attempt)
